@@ -1,0 +1,324 @@
+/* ======================
+TESTIMONIALS SECTION
+====================== */
+
+.testimonials{
+
+padding:120px 20px;
+
+background:linear-gradient(180deg,#0b0b0b,#111);
+
+color:white;
+
+text-align:center;
+
+position:relative;
+
+}
+
+/* título */
+
+.testimonials h2{
+
+font-size:38px;
+
+margin-bottom:60px;
+
+position:relative;
+
+display:inline-block;
+
+}
+
+/* linha decorativa */
+
+.testimonials h2::after{
+
+content:"";
+
+width:60px;
+height:3px;
+
+background:#00ff88;
+
+display:block;
+
+margin:10px auto 0;
+
+}
+
+
+/* ======================
+SLIDER
+====================== */
+
+.testimonial-slider{
+
+position:relative;
+
+max-width:700px;
+
+margin:auto;
+
+overflow:hidden;
+
+}
+
+
+/* track */
+
+.testimonial-track{
+
+display:flex;
+
+transition:transform 0.5s ease;
+
+}
+
+
+/* ======================
+CARD
+====================== */
+
+.testimonial-card{
+
+min-width:100%;
+
+padding:40px 30px;
+
+background:rgba(255,255,255,0.03);
+
+backdrop-filter:blur(10px);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+
+transition:0.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* glow */
+
+.testimonial-card::before{
+
+content:"";
+
+position:absolute;
+
+width:200px;
+height:200px;
+
+background:#00ff88;
+
+filter:blur(120px);
+
+opacity:0;
+
+top:-50px;
+left:-50px;
+
+transition:0.4s;
+
+}
+
+
+/* hover */
+
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#00ff88;
+
+}
+
+.testimonial-card:hover::before{
+
+opacity:0.15;
+
+}
+
+
+/* ======================
+FOTO DO ALUNO
+====================== */
+
+.testimonial-card img{
+
+width:80px;
+height:80px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin-bottom:15px;
+
+border:3px solid #00ff88;
+
+box-shadow:0 5px 20px rgba(0,255,136,0.4);
+
+}
+
+
+/* ======================
+NOME
+====================== */
+
+.testimonial-card h3{
+
+font-size:18px;
+
+margin-bottom:5px;
+
+}
+
+
+/* ======================
+ESTRELAS
+====================== */
+
+.stars{
+
+color:#00ff88;
+
+margin:10px 0;
+
+font-size:18px;
+
+letter-spacing:2px;
+
+}
+
+
+/* ======================
+TEXTO
+====================== */
+
+.testimonial-card p{
+
+font-size:15px;
+
+line-height:1.6;
+
+opacity:0.85;
+
+margin-top:10px;
+
+}
+
+
+/* ======================
+BOTÕES
+====================== */
+
+.test-prev,
+.test-next{
+
+position:absolute;
+
+top:50%;
+
+transform:translateY(-50%);
+
+background:rgba(0,0,0,0.6);
+
+border:1px solid rgba(0,255,136,0.2);
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+font-size:22px;
+
+color:#00ff88;
+
+cursor:pointer;
+
+transition:0.3s;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+
+/* hover botão */
+
+.test-prev:hover,
+.test-next:hover{
+
+background:#00ff88;
+
+color:#000;
+
+}
+
+
+/* posições */
+.test-prev{
+
+left:5px;
+z-index:10;
+
+}
+
+.test-next{
+
+right:5px;
+z-index:10;
+
+}
+
+
+/* ======================
+MOBILE
+====================== */
+
+@media (max-width:768px){
+
+.testimonials{
+
+padding:90px 20px;
+
+}
+
+.testimonials h2{
+
+font-size:30px;
+
+}
+
+.testimonial-card{
+
+padding:35px 25px;
+
+}
+
+.testimonial-card p{
+
+font-size:14px;
+
+}
+
+.test-prev,
+.test-next{
+
+width:40px;
+height:40px;
+
+font-size:20px;
+
+}
+
+}

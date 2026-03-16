@@ -1,0 +1,332 @@
+/* ======================
+ABOUT SECTION
+====================== */
+
+.about{
+
+padding:140px 20px;
+
+background:linear-gradient(180deg,#0b0b0b,#111);
+
+color:white;
+
+display:flex;
+justify-content:center;
+
+position:relative;
+
+}
+
+/* ======================
+CONTAINER
+====================== */
+
+.about-container{
+
+max-width:1200px;
+width:100%;
+
+display:grid;
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+/* ======================
+CONTENT
+====================== */
+
+.about-content{
+
+display:flex;
+flex-direction:column;
+
+gap:30px;
+
+}
+
+/* ======================
+IMAGEM
+====================== */
+
+.about-image{
+
+display:flex;
+justify-content:center;
+
+position:relative;
+
+}
+
+.about-image img{
+
+width:100%;
+max-width:420px;
+
+border-radius:20px;
+
+box-shadow:0 30px 80px rgba(0,0,0,0.6);
+border:3px solid rgba(0,255,136,0.2);
+transition:transform 0.4s ease;
+
+}
+
+.about-image img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* glow atrás da imagem */
+
+.about-image::before{
+
+content:"";
+
+position:absolute;
+
+width:300px;
+height:300px;
+
+background:#00ff88;
+
+filter:blur(120px);
+
+opacity:0.15;
+
+z-index:-1;
+
+}
+
+/* ======================
+TEXTO
+====================== */
+
+.about-text h2{
+
+font-size:38px;
+
+margin-bottom:25px;
+
+position:relative;
+
+}
+
+/* linha decorativa */
+
+.about-text h2::after{
+
+content:"";
+
+width:60px;
+height:3px;
+
+background:#00ff88;
+
+position:absolute;
+
+left:0;
+bottom:-10px;
+
+}
+
+/* texto */
+
+.about-text p{
+
+font-size:16px;
+
+line-height:1.7;
+
+opacity:0.85;
+
+margin-bottom:25px;
+
+}
+
+.about-text strong{
+
+color:#00ff88;
+
+}
+
+/* ======================
+BENEFÍCIOS
+====================== */
+
+.about-benefits{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+margin-top:10px;
+
+}
+
+.benefit{
+
+background:rgba(255,255,255,0.03);
+
+padding:14px 18px;
+
+border-radius:12px;
+
+border:1px solid rgba(255,255,255,0.05);
+
+font-size:14px;
+
+transition:0.3s;
+
+}
+
+.benefit:hover{
+
+border-color:#00ff88;
+
+transform:translateY(-3px);
+
+}
+
+/* ======================
+TABLET
+====================== */
+
+@media (max-width:900px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+text-align:center;
+
+}
+
+.about-text h2::after{
+
+left:50%;
+transform:translateX(-50%);
+
+}
+
+.about-benefits{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+/* ======================
+MOBILE
+====================== */
+
+@media (max-width:768px){
+
+.about{
+
+padding:90px 20px;
+
+}
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:30px;
+display:flex;
+flex-direction:column;
+text-align:center;
+
+}
+
+.about-content{
+order:1;
+}
+
+.about-image{
+order:2;
+}
+/* texto */
+
+.about-text h2{
+
+font-size:28px;
+
+}
+
+.about-text p{
+
+font-size:15px;
+
+}
+
+/* benefícios */
+
+.about-benefits{
+
+display:flex;
+flex-direction:column;
+
+gap:12px;
+
+}
+
+.benefit{
+
+padding:14px;
+
+font-size:14px;
+
+}
+
+/* imagem */
+
+.about-image img{
+
+max-width:260px;
+
+margin-top:10px;
+
+}
+
+}
+
+/* ======================
+CELULARES PEQUENOS
+====================== */
+
+@media (max-width:480px){
+
+.about{
+
+padding:80px 20px;
+
+}
+
+.about-text h2{
+
+font-size:26px;
+
+}
+
+.about-text p{
+
+font-size:14px;
+
+}
+
+.about-image img{
+
+max-width:220px;
+
+}
+
+}
