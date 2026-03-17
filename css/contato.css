@@ -1,0 +1,209 @@
+/* ======================
+CONTACT CLEAN MODERNO
+====================== */
+
+.contact{
+
+padding:140px 20px;
+
+background:linear-gradient(180deg,#0b0b0b,#111);
+
+color:white;
+
+text-align:center;
+
+}
+
+/* título */
+
+.contact h2{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.contact-subtitle{
+
+opacity:0.6;
+
+margin-bottom:60px;
+
+}
+
+/* ======================
+LISTA
+====================== */
+
+.contact-list{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+/* ======================
+CORES POR ITEM
+====================== */
+
+.whatsapp{
+--color:#25d366;
+}
+
+.instagram{
+--color:#e1306c;
+}
+
+.email{
+--color:#3b82f6;
+}
+
+/* ======================
+ITEM
+====================== */
+
+.contact-item{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:20px 25px;
+
+text-decoration:none;
+
+color:white;
+
+border-bottom:1px solid var(--color);
+
+transition:0.3s;
+
+position:relative;
+
+}
+
+/* lado esquerdo */
+
+.contact-item span{
+
+flex:1;
+
+text-align:left;
+
+margin-left:15px;
+
+font-size:18px;
+
+}
+
+/* ícone */
+
+.contact-item i{
+
+font-size:24px;
+
+min-width:30px;
+
+transition:0.3s;
+
+}
+
+/* descrição */
+
+.contact-item small{
+
+opacity:0.5;
+
+font-size:13px;
+
+}
+
+/* ======================
+HOVER
+====================== */
+
+.contact-item:hover{
+
+transform:translateX(8px);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+background:linear-gradient(90deg, transparent, rgba(255,255,255,0.03));
+
+}
+
+/* ícone muda de cor */
+
+.contact-item:hover i{
+
+color:var(--color);
+
+transform:scale(1.2);
+
+}
+
+/* linha animada */
+
+.contact-item::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:0;
+
+width:0%;
+height:2px;
+
+background:var(--color);
+
+transition:0.3s;
+
+}
+
+.contact-item:hover::after{
+
+width:100%;
+
+}
+
+/* ======================
+MOBILE
+====================== */
+
+@media (max-width:768px){
+
+.contact h2{
+
+font-size:30px;
+
+}
+
+.contact-item{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:5px;
+
+}
+
+.contact-item span{
+
+margin-left:0;
+
+}
+
+}

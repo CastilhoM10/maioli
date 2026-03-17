@@ -13,13 +13,32 @@ text-align:center;
 }
 .pricing h2{
 
+font-size:38px;
+
+margin-bottom:60px;
+
 position:relative;
-    padding: 0 0 20px 0;
-    margin-bottom: 30px;
-    margin-top: -30px;
-    font-size:38px;
+
+display:inline-block;
+
 }
 
+/* linha decorativa */
+
+.pricing h2::after{
+
+content:"";
+
+width:60px;
+height:3px;
+
+background:#00ff88;
+
+display:block;
+
+margin:10px auto 0;
+
+}
 /* CARROSSEL */
 
 .carousel{
