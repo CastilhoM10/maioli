@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* HEADER */
 
 header{
 position:fixed;
@@ -9,14 +9,13 @@ justify-content:center;
 z-index:1000;
 }
 
-/* navbar */
+/* NAVBAR */
 
 .navbar{
-position: relative;
 width:90%;
 max-width:1200px;
-display:grid;
-grid-template-columns:1fr auto 1fr;
+display:flex;
+justify-content:space-between;
 align-items:center;
 padding:18px 30px;
 margin-top:10px;
@@ -32,35 +31,27 @@ box-shadow:0 5px 20px rgba(0,0,0,0.4);
 font-size:22px;
 font-weight:bold;
 letter-spacing:2px;
-justify-self:start;
 }
 
-/* MENU */
+/* MENU DESKTOP */
 
 .nav-links{
 display:flex;
 gap:40px;
 list-style:none;
-justify-content:center;
 }
 
 .nav-links a{
-color:white;
+color:#b8b8b8;
 text-decoration:none;
 font-size:16px;
-padding:5px 10px;
 position:relative;
 transition:0.3s;
 }
 
-/* hover */
-
 .nav-links a:hover{
-color:#00ff88;
-transform:translateY(-3px);
+color:#686868;
 }
-
-/* underline */
 
 .nav-links a::after{
 content:"";
@@ -69,7 +60,7 @@ left:0;
 bottom:-6px;
 width:0;
 height:2px;
-background:#00ff88;
+background:#0069be;
 transition:0.3s;
 }
 
@@ -77,31 +68,22 @@ transition:0.3s;
 width:100%;
 }
 
-/* MENU TOGGLE */
+/* BOTÃO MENU */
 
 .menu-toggle{
-justify-self:end;
+display:none;
 font-size:24px;
 cursor:pointer;
-display:none;
-color: #00ff88;
+color:#0069be;
+z-index:2001;
 }
 
-/* ======================
-MENU MOBILE
-====================== */
+/* ================= MOBILE ================= */
 
 @media (max-width:768px){
 
 .menu-toggle{
 display:block;
-position:absolute;
-top:20px;
-right:25px;
-font-size:24px;
-cursor:pointer;
-color:#00ff88;
-z-index:1002;
 }
 
 /* MENU LATERAL */
@@ -109,29 +91,26 @@ z-index:1002;
 .nav-links{
 position:fixed;
 top:0;
-right:-110%;
-border-bottom-left-radius: 30px;
+right:-100%;
 width:280px;
 height:100vh;
-background:rgba(15,15,15,0.6);
+background:rgba(15,15,15,0.95);
 flex-direction:column;
-justify-content:flex-start;
 align-items:center;
 padding-top:120px;
 gap:35px;
-transition:0.4s ease;
+transition:0.4s;
+z-index:2000;
 }
-
-
 
 /* MENU ABERTO */
 
 .nav-links.active{
-right:-30px;
-top: -30px;
+right:0;
 }
 
 }
+
 /* OVERLAY */
 
 .menu-overlay{
@@ -144,7 +123,7 @@ background:rgba(0,0,0,0.6);
 opacity:0;
 pointer-events:none;
 transition:0.3s;
-
+z-index:1500;
 }
 
 .menu-overlay.active{

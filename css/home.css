@@ -7,7 +7,7 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:0 20px;
-background-image:url("../img/fundo.jpg");
+background-image:url("../img/fundo.png");
 background-size:cover;
 background-position:center;
 position:relative;
@@ -39,6 +39,7 @@ z-index:2;
 font-size:60px;
 font-weight:700;
 margin-bottom:20px;
+color: #0069be;
 }
 
 /* texto */
@@ -63,7 +64,7 @@ margin-bottom:50px;
 /* botão principal */
 
 .btn-primary{
-background:#00ff88;
+background: #0086f3;
 color:black;
 padding:14px 30px;
 border-radius:8px;
@@ -74,14 +75,15 @@ transition:0.3s;
 
 .btn-primary:hover{
 transform:translateY(-3px);
-box-shadow:0 10px 20px rgba(0,255,136,0.3);
+box-shadow:0 10px 20px rgba(0, 17, 255, 0.3);
+color: #fff;
 }
 
 /* botão secundário */
 
 .btn-secondary{
 background:transparent;
-border:2px solid #00ff88;
+border:2px solid #0086f3;
 color:white;
 padding:12px 26px;
 border-radius:8px;
@@ -93,8 +95,9 @@ transition:0.3s;
 }
 
 .btn-secondary:hover{
-background:#00ff88;
+background:#0086f3;
 color:black;
+font-weight: 700;
 }
 
 /* ======================
@@ -111,13 +114,13 @@ flex-wrap:wrap;
 .stat h3{
 
 font-size:28px;
-color:#00ff88;
+color: #bdc4ca;
 margin-bottom:5px;
 }
 
 .stat p{
 font-size:14px;
-color:#ccc;
+color:#c2c2c291;
 }
 
 /* ======================

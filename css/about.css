@@ -91,7 +91,7 @@ position:absolute;
 width:300px;
 height:300px;
 
-background:#00ff88;
+background:#0069be;
 
 filter:blur(120px);
 
@@ -124,7 +124,7 @@ content:"";
 width:60px;
 height:3px;
 
-background:#00ff88;
+background:#0086f3;
 
 position:absolute;
 
@@ -149,7 +149,7 @@ margin-bottom:25px;
 
 .about-text strong{
 
-color:#00ff88;
+color:#0086f3;
 
 }
 
@@ -187,7 +187,7 @@ transition:0.3s;
 
 .benefit:hover{
 
-border-color:#00ff88;
+border-color:#0086f3;
 
 transform:translateY(-3px);
 
