@@ -1,37 +1,23 @@
-const toggle = document.querySelector(".menu-toggle")
-const nav = document.querySelector(".nav-links")
-const overlay = document.querySelector(".menu-overlay")
-const icon = toggle.querySelector("i")
+const btn = document.querySelector(".menu-btn")
+const menu = document.querySelector(".menu")
+const icon = btn.querySelector("i")
 
-toggle.addEventListener("click", () => {
-    nav.classList.toggle("active")
-    overlay.classList.toggle("active")
+btn.addEventListener("click", () => {
+    menu.classList.toggle("active")
 
-    if(nav.classList.contains("active")){
+    if(menu.classList.contains("active")){
         icon.classList.remove("fa-bars")
-        icon.classList.add("fa-x")
+        icon.classList.add("fa-xmark")
     } else {
-        icon.classList.remove("fa-x")
+        icon.classList.remove("fa-xmark")
         icon.classList.add("fa-bars")
     }
 })
 
-overlay.addEventListener("click", () => {
-    nav.classList.remove("active")
-    overlay.classList.remove("active")
-
-    icon.classList.remove("fa-x")
-    icon.classList.add("fa-bars")
-})
-
-/* FECHAR AO CLICAR NO LINK */
-
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll(".menu a").forEach(link => {
     link.addEventListener("click", () => {
-        nav.classList.remove("active")
-        overlay.classList.remove("active")
-
-        icon.classList.remove("fa-x")
+        menu.classList.remove("active")
+        icon.classList.remove("fa-xmark")
         icon.classList.add("fa-bars")
     })
 })

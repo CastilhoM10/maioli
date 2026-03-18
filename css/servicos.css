@@ -92,7 +92,7 @@ content:"";
 width:60px;
 height:3px;
 
-background:#00ff88;
+background:#0086f3;
 
 display:block;
 
@@ -108,7 +108,7 @@ position:absolute;
 width:200px;
 height:200px;
 
-background:#00ff88;
+background:#0086f3;
 
 filter:blur(120px);
 
@@ -126,7 +126,7 @@ transition:0.4s;
 
 transform:translateY(-10px) scale(1.02);
 
-border-color:#00ff88;
+border-color:#0086f3;
 
 }
 
@@ -147,7 +147,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-background:rgba(0,255,136,0.08);
+background:rgba(0, 47, 255, 0.08);
 
 border-radius:50%;
 
@@ -155,7 +155,7 @@ font-size:28px;
 
 margin:0 auto 20px auto;
 
-border:1px solid rgba(0,255,136,0.2);
+border:1px solid rgba(25, 0, 255, 0.2);
 
 transition:0.3s;
 
@@ -164,7 +164,7 @@ transition:0.3s;
 
 .service-card:hover .service-icon{
 
-background:#00ff88;
+background:#0069be;
 
 color:#000;
 

@@ -69,7 +69,7 @@ max-width:420px;
 border-radius:20px;
 
 box-shadow:0 30px 80px rgba(0,0,0,0.6);
-border:3px solid rgba(0,255,136,0.2);
+border:3px solid rgba(0, 132, 255, 0.2);
 transition:transform 0.4s ease;
 
 }
@@ -264,8 +264,12 @@ font-size:28px;
 
 .about-text p{
 
-font-size:15px;
-
+    max-width: 500px;
+    margin: 0 15px;
+    text-align: justify;
+    line-height: 1.5;
+    color: #d1d1d1;
+    font-size: 16px;
 }
 
 /* benefícios */

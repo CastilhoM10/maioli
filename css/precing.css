@@ -32,7 +32,7 @@ content:"";
 width:60px;
 height:3px;
 
-background:#00ff88;
+background:#0086f3;
 
 display:block;
 
@@ -97,9 +97,9 @@ transition:0.5s;
 
 transform:scale(1.1);
 
-border-color:#00ff88;
+border-color:#0086f3;
 
-box-shadow:0 10px 40px rgba(0,255,136,0.2);
+box-shadow:0 10px 40px rgba(0, 4, 255, 0.2);
 
 }
 
@@ -127,7 +127,7 @@ opacity:0.6;
 
 font-size:40px;
 
-color:#00ff88;
+color:#0086f3;
 
 margin:15px 0;
 
@@ -149,7 +149,7 @@ border:none;
 
 font-size:28px;
 
-color:#00ff88;
+color:#0086f3;
 
 cursor:pointer;
 
@@ -181,9 +181,9 @@ animation:cardEnter 0.4s ease;
 }
 .plan-card.active{
 
-box-shadow:0 20px 60px rgba(0,255,136,0.25);
+box-shadow:0 20px 60px rgba(0, 89, 255, 0.25);
 
-border-color:#00ff88;
+border-color:#0086f3;
 
 transform:scale(1.03);
 
@@ -215,7 +215,7 @@ transition:0.3s;
 
 .dot.active{
 
-background:#00ff88;
+background:#0086f3;
 
 transform:scale(1.3);
 
