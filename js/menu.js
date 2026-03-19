@@ -24,7 +24,7 @@ document.querySelectorAll(".menu a").forEach(link => {
 
 function abrirWhatsapp(){
 
-let numero = "5519999999999"
+let numero = "5519993047238"
 let mensagem = "Olá, gostaria de saber mais sobre os treinos!"
 
 let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`

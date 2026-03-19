@@ -31,13 +31,11 @@ card.style.display = "block";
 
 cards[index].classList.add("active");
 
-if(cards[index - 1]){
-cards[index - 1].classList.add("left");
-}
+let prevIndex = (index - 1 + cards.length) % cards.length;
+let nextIndex = (index + 1) % cards.length;
 
-if(cards[index + 1]){
-cards[index + 1].classList.add("right");
-}
+cards[prevIndex].classList.add("left");
+cards[nextIndex].classList.add("right");
 
 }
 
