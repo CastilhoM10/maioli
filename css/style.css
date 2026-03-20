@@ -74,6 +74,7 @@ box-shadow:0 15px 40px rgba(0,0,0,0.6);
 
 }
 
+
 /* animação pulsando */
 
 @keyframes pulse{
@@ -97,6 +98,96 @@ box-shadow:0 0 0 0 rgba(37,211,102,0);
 }
 
 }
+/* ======================
+LOADER BASE
+====================== */
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/* ======================
+TEXTO
+====================== */
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* ======================
+ÁGUA
+====================== */
+
+.water {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: #0086f3;
+  animation: rise 2.5s ease-in-out forwards;
+}
+
+/* ondas */
+.wave {
+  position: absolute;
+  top: -80px;
+  width: 200%;
+  height: 100px;
+  background: url("https://svgshare.com/i/13kU.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.wave1 {
+  animation: waveMove 5s linear infinite;
+  opacity: 0.8;
+}
+
+.wave2 {
+  animation: waveMove 8s linear infinite;
+  opacity: 0.4;
+}
+
+/* ======================
+ANIMAÇÕES
+====================== */
+
+/* água subindo */
+@keyframes rise {
+  0% {
+    bottom: -100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+/* onda mexendo */
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 
 /* ======================
 MOBILE azul claro #0086f3 azul escuro #0069be
