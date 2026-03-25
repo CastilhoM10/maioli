@@ -199,7 +199,7 @@ animation:cardEnter 0.4s ease;
 }
 /* destaque (mais escolhido) */
 .destaque-card {
-  border: 2px solid #00aaff;
+  border: 2px solid #71d0ff;
 }
 
 .badge {

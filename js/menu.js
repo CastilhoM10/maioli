@@ -33,3 +33,24 @@ window.open(url, "_blank")
 
 }
 
+function abrirWhatsappPro(){
+
+let numero = "5519993047238"
+let mensagem = "Olá, gostaria de saber mais sobre o plano Pro!"
+
+let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
+
+window.open(url, "_blank")
+
+}
+
+function abrirWhatsappSimples(){
+
+let numero = "5519993047238"
+let mensagem = "Olá, gostaria de saber mais sobre o plano Simples!"
+
+let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`
+
+window.open(url, "_blank")
+
+}
